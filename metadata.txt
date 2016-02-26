@@ -28,7 +28,7 @@ repository=https://github.com/daniel-childs/blockmodel
 # Tags are comma separated with spaces allowed
 tags=
 
-homepage=
+homepage=https://github.com/daniel-childs/blockmodel
 category=Plugins
 icon=icon.png
 # experimental flag
