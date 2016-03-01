@@ -1,5 +1,5 @@
 #/***************************************************************************
-# BlockModel
+# blockmodel
 #
 # 3d block model tools
 #							 -------------------
@@ -40,11 +40,11 @@ SOURCES = \
 	__init__.py \
 	block_model.py block_model_dialog.py
 
-PLUGINNAME = BlockModel
+PLUGINNAME = blockmodel
 
 PY_FILES = \
 	__init__.py \
-	block_model.py block_model_dialog.py
+	block_model.py block_model_dialog.py cni.py
 
 UI_FILES = block_model_dialog_base.ui
 
@@ -90,8 +90,6 @@ deploy: compile doc transcompile
 	cp -vf $(UI_FILES) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)
 	cp -vf $(COMPILED_RESOURCE_FILES) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)
 	cp -vf $(EXTRAS) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)
-	cp -vfr i18n $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)
-	cp -vfr $(HELP) $(HOME)/$(QGISDIR)/python/plugins/$(PLUGINNAME)/help
 
 # The dclean target removes compiled python files from plugin directory
 # also deletes any .git entry
