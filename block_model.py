@@ -256,7 +256,7 @@ class BlockModel:
 				selectedLayer = layer
         sNODATA_value = -1
         print('Loading ASC surface.')
-        sncols,snrows,sxllcorner,syllcorner,scellsize = cni.dtmProperties(layer)
+        sncols,snrows,sxllcorner,syllcorner,scellsize = cni.dtmProperties(selectedLayer)
         print('Finding block model limits.')
         bminX,bminY,bminZ,bnCols,bnRows,bnLvls,bcolSize,browSize,blvlSize = cni.blockModelLimits(blockModelFile,self.dlg.statusBlockModelExtents)
         print('Initializing 3d block model.')

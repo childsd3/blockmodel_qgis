@@ -152,6 +152,7 @@ def generateASC (ascModel,ncols,nrows,xllcorner,yllcorner,cellsize,NODATA_value)
 	return outputString
 	
 def dtmProperties(layer):
+	print('ahhh!',layer.name())
 	numCol = layer.width()
 	numRow = layer.height()
 	extents = layer.extent().toString().strip('u').replace(':',',').replace(' ','')
